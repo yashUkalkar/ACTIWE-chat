@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACTIWE messaging</title>
+    <link
+      rel="shortcut icon"
+      href="../../Resources/Icons_and_logo/Initials logo light.png"
+      type="image/x-icon"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../CSS/login_page.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left-content">
+        <nav>
+          <a href="index.html" class="initials-logo"
+            ><img
+              src="../../Resources/Icons_and_logo/Initials logo dark.png"
+              alt="ACTIWE"
+          /></a>
+          <div class="nav-links">
+            <a href="#" class="about-link"
+              >About
+              <div class="underline"></div
+            ></a>
+            <a
+              href="https://github.com/yashUkalkar/ACTIWE-messaging-application"
+              class="github-repo-link"
+              target="_blank" 
+              title="Github repository"
+              ><img
+                src="../../Resources/Icons_and_logo/Github logo.png"
+                alt="Github Repository"
+              />
+            </a>
+          </div>
+          <!--nav-links END-->
+        </nav>
+
+        <div class="info-container">
+          <img
+            src="../../Resources/Icons_and_logo/App logo dark.png"
+            alt="ACTIWE"
+            class="app-logo"
+          />
+          <div class="description">
+            <p>
+              <b>ACTIWE</b> stands for <b>A</b>ctively <b>C</b>omprehend the
+              <b>T</b>ransferred <b>I</b>nformation <b>W</b>ith <b>E</b>ase, and
+              features auto translation for the messages you receive.
+            </p>
+          </div>
+          <!--description END-->
+
+          <div class="language-chars">
+            <img
+              src="../../Resources/Icons_and_logo/Korean character.png"
+              alt="#"
+            />
+            <img
+              src="../../Resources/Icons_and_logo/English character.png"
+              alt="#"
+            />
+            <img
+              src="../../Resources/Icons_and_logo/Japanese character.png"
+              alt="#"
+            />
+            <img
+              src="../../Resources/Icons_and_logo/Hindi character.png"
+              alt="#"
+            />
+            <img
+              src="../../Resources/Icons_and_logo/Chinese character.png"
+              alt="#"
+            />
+          </div>
+        </div>
+        <!--info-container END-->
+      </div>
+      <!--left-content END-->
+
+      <div class="right-content">
+        <div class="login-card">
+          <h2>Log in</h2>
+
+          <form class="login-form" action="chat.html" method="GET">
+            <input
+              name="name"
+              type="text"
+              id="name-field"
+              placeholder="Enter your name"
+              required
+            />
+            <div class="name-field-underline"></div>
+
+            <input
+              name="username"
+              type="text"
+              id="username-field"
+              placeholder="Enter username"
+              required
+            />
+            <div class="username-field-underline"></div>
+
+            <select id="default-language" name="language">
+              <option value="en" selected>Select a default language</option>
+              <option value="en">English</option>
+              <option value="hi">हिंदी</option>
+              <option value="ko">한글</option>
+              <!--ADD MORE LANGUAGE OPTIONS-->
+            </select>
+            <div class="language-field-underline"></div>
+
+            <button type="submit" class="login-button">Log in</button>
+          </form>
+        </div>
+        <!--login-card END-->
+      </div>
+      <!--right-content END-->
+    </main>
+
+    <footer>
+      <p>Copyright &copy;2021 All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/login_page.js"></script>
+  </body>
+</html>

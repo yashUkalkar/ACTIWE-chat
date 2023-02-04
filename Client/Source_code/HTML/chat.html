@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACTIWE messaging</title>
+    <link
+      rel="shortcut icon"
+      href="../../Resources/Icons_and_logo/Initials logo light.png"
+      type="image/x-icon"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../CSS/chat_page.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="../../Resources/Icons_and_logo/Mix logo dark.png"
+            alt="ACTIWE"
+          />
+        </div>
+        <!--logo div END-->
+
+        <div class="navlinks">
+          <button class="logout">Logout</button>
+
+          <a
+            href="https://github.com/yashUkalkar/ACTIWE-messaging-application"
+            class="github-repo-link"
+            target="_blank"
+          >
+            <img
+              src="../../Resources/Icons_and_logo/Github logo.png"
+              alt="Github repository"
+              title="Github repository"
+            />
+          </a>
+        </div>
+        <!--navlinks div END-->
+      </nav>
+    </header>
+
+    <main>
+      <div class="left-container">
+        <div class="profile-container"></div>
+        <!--profile-container div END-->
+
+        <div class="chat-heads-container"></div>
+        <!--chat-heads-container div END-->
+      </div>
+      <!--left-container div END-->
+
+      <div class="right-container">
+        <div class="chat-info">
+          <div class="chat-details">
+            <div class="profile-picture">
+              <img
+                src="../../Resources/Icons_and_logo/Default profile picture.png"
+              />
+            </div>
+            <!--profile-picture END-->
+
+            <a href="#" class="chat-name-heading">Universal Chat</a>
+          </div>
+          <!--chat-details END-->
+
+          <div class="stored-messages-container">
+            <button>Stored messages</button>
+
+            <div class="stored-messages-card closed">
+              <p class="sm-title">Your messages</p>
+
+              <div class="user-stored-messages">
+                <!-- <p class="stored-message">Thank you</p> -->
+              </div>
+
+              <button class="store-new-message">+Add new message</button>
+            </div>
+          </div>
+          <!--stored-messages-container END-->
+
+          <div class="translation-toggle" title="Switch translation ON/OFF">
+            <p>Translation</p>
+
+            <button>OFF</button>
+          </div>
+          <!--translation-toggle END-->
+        </div>
+        <!--chat-info div END-->
+
+        <div class="chat-view-area">
+          <!-- <div class="message-container">
+            <p class="chat-name">Person 1</p>
+            <p class="message received-message">This is how the message you received would look</p>
+          </div>
+
+          <div class="message-container">
+            <p class="chat-name">You</p>
+            <p class="message sent-message">This is how the message you send would look</p>
+          </div> -->
+
+          <p class="default-message">No messages yet!</p>
+        </div>
+        <!--chat-view-area div END-->
+
+        <div class="message-area">
+          <input
+            type="text"
+            class="to-box"
+            placeholder="To:(username)"
+            title="If left empty, message is sent to everyone connected"
+          />
+          <input
+            type="text"
+            class="message-box"
+            placeholder="Enter your message"
+          />
+          <button class="send-button">Send</button>
+        </div>
+        <!--message-area div END-->
+      </div>
+      <!--right-container div END-->
+    </main>
+
+    <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+    <!-- <script src="https://actiwe-server.herokuapp.com/socket.io/socket.io.js"></script> -->
+    <script src="../JS/client.js"></script>
+  </body>
+</html>
